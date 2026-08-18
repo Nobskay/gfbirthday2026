@@ -1,0 +1,1 @@
+export default function Petals(){return <div aria-hidden className="pointer-events-none fixed inset-0 z-0 overflow-hidden">{Array.from({length:12}).map((_,i)=><span key={i} className="absolute block h-3 w-2 rounded-[70%_30%_65%_35%] bg-blush/50" style={{left:`${(i*19)%97}%`,animation:`drift ${15+(i%5)*3}s linear ${-i*2.3}s infinite`}}/>)}</div>}

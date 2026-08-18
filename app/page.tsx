@@ -1,0 +1,2 @@
+import Hero from '@/components/Hero'; import Countdown from '@/components/Countdown'; import LoveLetter from '@/components/LoveLetter'; import Gallery from '@/components/Gallery'; import Surprises from '@/components/Surprises'; import Miu from '@/components/Miu'; import Closing from '@/components/Closing'; import Petals from '@/components/Petals'; import CatTrail from '@/components/CatTrail';
+export default function Home(){return <main className="relative overflow-hidden"><Petals/><CatTrail/><Hero/><Countdown/><LoveLetter/><Gallery/><Surprises/><Miu/><Closing/></main>}

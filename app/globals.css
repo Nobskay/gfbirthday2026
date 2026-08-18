@@ -1,0 +1,10 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+:root{color-scheme:light} html{scroll-behavior:smooth} body{margin:0;background:#fffaf4;color:#3f3335;font-family:var(--font-inter),sans-serif} *{box-sizing:border-box} ::selection{background:#efd4d5;color:#754b53}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 12% 18%,rgba(239,212,213,.6),transparent 28%),radial-gradient(circle at 85% 32%,rgba(197,164,109,.13),transparent 25%),linear-gradient(180deg,#fffaf4,#f8eee5 48%,#fffaf4);animation:breathe 14s ease-in-out infinite alternate}
+@keyframes breathe{to{filter:hue-rotate(4deg);transform:scale(1.035)}}
+@keyframes float{0%,100%{transform:translate3d(0,0,0) rotate(0)}50%{transform:translate3d(8px,-16px,0) rotate(7deg)}}
+@keyframes drift{0%{transform:translateY(-12vh) rotate(0);opacity:0}10%{opacity:.35}90%{opacity:.22}100%{transform:translateY(112vh) rotate(300deg);opacity:0}}
+.paper-lines{background-image:linear-gradient(rgba(184,124,130,.08) 1px,transparent 1px);background-size:100% 31px}
+.section-kicker{font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:#b87c82;font-weight:600}
+.focus-ring:focus-visible{outline:2px solid #b87c82;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
